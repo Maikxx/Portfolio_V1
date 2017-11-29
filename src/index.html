@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="The official portfolio website of Maikel van Veen.		On this website you can find all the information you should know about me, and what I can do for you!">
+    <title>Maikel van Veen || Developer</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="nav-home" class="js-active" data-scroll-target="home">Home</li>
+                <li id="nav-about" data-scroll-target="about">ABOUT</li>
+                <li id="nav-portfolio" data-scroll-target="portfolio">PORTFOLIO</li>
+                <li id="nav-contact" data-scroll-target="contact">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section home">
+            <header>
+                <h1>Maikel van Veen</h1>
+                <span>Back- and Frontend Developer</span>
+            </header>
+            <section class="carousel card">
+                <figure class="button btn-circle car-btn"></figure>
+                <a href="projects/watch_and_code/index.html" class="car-img">
+                    <header>
+                        <h2>To Do List (2017)</h2>
+                        <p>A simple to do list website for you to use.</p>
+                    </header>
+                </a>
+                <a href="projects/business_template/index.html" class="car-img">
+                    <header>
+                        <h2>Business Web Template (2017)</h2>
+                        <p>A visually effective Business Website. Which could go on sale at any time if someone wished.</p>
+                    </header>
+                </a>
+                <a href="projects/maikelvanveen_old/index.html" class="car-img">
+                    <header>
+                        <h2>Prototype Application (2016) (Dutch)</h2>
+                        <p>A not technically functional website. Made for showing creative ideas.</p>
+                    </header>
+                </a>
+                <figure class="button btn-circle car-btn"> </figure>
+            </section>
+        </section>
+        <section class="main-section about-me">
+            <figure class="division-line"></figure>
+            <header>
+                <h2>About Me</h2>
+                <span>The most important things to know about me and what I do.</span>
+            </header>
+            <ul>
+                <li class="about description card">
+                    <h2>Who Am I?</h2>
+                    <p>
+                        I am a 20-year-old Dutch student Communication &amp; Multimedia Design. Besides studying, I work hard to become a developer.
+                        <br> I do not know exactly what kind of developer I want to be at this very moment, however my preference
+                        goes to the front-end.
+                        <br> I have always had an interest for development, but since 2017 this became a passion of mine! I am
+                        still learning and gaining experience, that is the reason why there are only some basic projects
+                        in my portfolio down below.
+                    </p>
+                </li>
+                <li class="about services card">
+                    <h2>My Services</h2>
+                    <ul>
+                        <li>Create a custom-made, new website.</li>
+                        <li>Code a PSD template into a working website.</li>
+                        <li>Rework an outdated website.</li>
+                        <li>Clean up messy code of a website.</li>
+                    </ul>
+                </li>
+                <li class="about skills card">
+                    <h2>My Skills</h2>
+                    <figure> </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section portfolio">
+            <figure class="division-line"></figure>
+            <header>
+                <h2>Portfolio</h2>
+                <span>Take a look at some of my most recent projects.</span>
+            </header>
+            <section>
+                <a href="projects/maikelvanveen_old/index.html" class="project card hoverable">
+                    <section class="proj-description">
+                        <h2>Portfolio Website V1 (2017)</h2>
+                        <p>
+                            This was my very own first portfolio website I built myself. I mainly used it for testing new things out that I learned.
+                            <span>I choose to move on to my current portfolio, because I wanted to represent myself better.</span>
+                        </p>
+                    </section>
+                </a>
+                <a href="projects/business_template/index.html" class="project card hoverable">
+                    <section class="proj-description">
+                        <h2>Business Web Template (2017)</h2>
+                        <p>
+                            In this project I took a PDF-template which looked like a business website and coded it from scratch into a website.
+                            <span>The main goal of me making this, was getting familiar with making PSD templates into working
+                                code.
+                            </span>
+                        </p>
+                    </section>
+                </a>
+                <a href="projects/watch_and_code/index.html" class="project card hoverable">
+                    <section class="proj-description">
+                        <h2>DFDS</h2>
+                        <p>In this project I learned myself to create a Todo-list from scratch.
+                            <span>I allways thought this was a relatively simplething to make, but to get it right there was a
+                                lot more work than I anticipated for.</span>
+                        </p>
+                    </section>
+                </a>
+                <a href="projects/dfds_seaways/index.html" class="project exclude card hoverable">
+                    <section class="proj-description">
+                        <h2>Next Web (2016)</h2>
+                        <p>This website I built for a school project that focussed on design.
+                            <span>The main focus here was making a futuristic web-application idea clear, by designing the website.
+                                This is the reason it is not fully working on a database, because at that time of making,
+                                I didn't know how that worked yet.</span>
+                        </p>
+                    </section>
+                </a>
+            </section>
+            <a href="#" class="button more-projects btn-square btn-primary">VIEW MORE</a>
+        </section>
+        <section class="main-section contact">
+            <figure class="division-line"></figure>
+            <header>
+                <h2>Contact Me</h2>
+                <span>All of the ways you can use to contact me, you will find below.</span>
+            </header>
+            <form action="php/mail.inc.php" method="POST" class="form">
+                <fieldset class="input-label-wrapper">
+                    <label for="input-name" class="iw-label">Name</label>
+                    <input id="input-name" type="text" class="iw-input" required>
+                </fieldset>
+                <fieldset class="input-label-wrapper">
+                    <label for="input-email" class="iw-label">Email</label>
+                    <input id="input-email" type="email" class="iw-input" required>
+                </fieldset>
+                <fieldset class="input-label-wrapper">
+                    <label for="input-message" class="iw-label">Message</label>
+                    <textarea id="input-message" class="iw-input" required></textarea>
+                </fieldset>
+                <button type="submit" class="button submit-mail btn-square btn-primary">SEND MAIL</button>
+            </form>
+            <section id="form-message-output">
+            </section>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://tinyurl.com/k2c6zhk"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://tinyurl.com/mnm3bb3"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://tinyurl.com/n96vl32"></a>
+                </li>
+            </ul>
+            <!-- Facebook - Github - Instagram-->
+        </section>
+    </main>
+    <footer>
+        <figure class="button to-top btn-circle btn-primary"></figure>
+        <small>All content is © 2017 by Maikel van Veen. All rights reserved. Coded with ♥ by Maikel van Veen.</small>
+    </footer>
+    <script src="js/compiled.js">
+    </script>
+</body>
+
+</html>

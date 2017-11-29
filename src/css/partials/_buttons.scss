@@ -1,0 +1,71 @@
+.button {
+    border: none;
+    box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: box-shadow #{$transition-speed - 200},
+    transform #{$transition-speed -200};
+    transition-timing-function: ease-in-out;
+    &:active {
+        box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+        transform: translateY(3px);
+    }
+    &.more-projects {
+        margin-bottom: 40px;
+    }
+    &.submit-mail {
+        margin-top: 20px;
+        &.js-active {
+            display: none;
+            opacity: 0;
+        }
+    }
+    &.to-top {
+        height: $btn-size-medium;
+        opacity: 0;
+        position: absolute;
+        right: 10px;
+        top: -$btn-size-medium;
+        transition: all $transition-speed ease-in-out;
+        width: $btn-size-medium;
+        &::before {
+            background: url("../img/icons/arrow-up.png") center no-repeat;
+            background-size: $btn-background-size;
+            border-radius: inherit;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            transform: rotate(180deg);
+            width: 100%;
+        }
+        &.bottom-reached {
+            opacity: 1;
+            top: -50px;
+        }
+        &.bottom-not-reached {
+            opacity: 0;
+            top: -40px;
+        }
+    }
+}
+
+.btn-circle {
+    border-radius: $btn-border-radius;
+}
+
+.btn-primary {
+    background-color: $red;
+    color: $white;
+    &:hover {
+        background-color: $dark-red;
+    }
+}
+
+.btn-square {
+    border-radius: $global-border-radius;
+    font-size: .8rem;
+    line-height: 1;
+    padding: 10px 50px;
+}
